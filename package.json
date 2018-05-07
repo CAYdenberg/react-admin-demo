@@ -1,0 +1,24 @@
+{
+  "name": "react-admin-test",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "./node_modules/.bin/parcel ./public/index.html -p 1234"
+  },
+  "author": "@CAYdenberg",
+  "license": "MIT",
+  "dependencies": {
+    "ra-data-fakerest": "^2.0.0-RC2",
+    "react": "^16.2.0",
+    "react-admin": "^2.0.0-RC2",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.6.0",
+    "babel": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1"
+  }
+}
