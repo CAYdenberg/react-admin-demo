@@ -23,20 +23,11 @@ const PostList = (props) =>
       </Datagrid>
     </List>
 
-const PostCreate = (props) =>
-  <Create {...props}>
-    <SimpleForm>
-      <TextInput source="title" />
-      <RadioButtonGroupInput source="status" choices={[
-        {id: 'draft', name: 'Draft'},
-        {id: 'published', name: 'Published'}
-      ]} />
-    </SimpleForm>
-  </Create>
+const authProvider = () => Promise.resolve()
 
 const App = () => (
     <Admin dataProvider={dataProvider}>
-        <Resource name="posts" list={PostList} create={PostCreate} />
+        <Resource name="posts" list={PostList} authProvider={authProvider} />
     </Admin>
 )
 
